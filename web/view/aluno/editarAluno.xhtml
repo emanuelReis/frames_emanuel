@@ -51,7 +51,15 @@
                         <h:inputText class="form-control" id="cargo" value="#{alunoController.alunoModel.cargo}"/>
                     </div>
                 </div>
-                <h:commandButton class="btn btn-primary" value="salvar" action="#{alunoController.salvar()}"/>
+
+                <div class="form-row">
+                    <div class="form-group col-md-1">
+                        <h:commandButton class="btn btn-secondary" value="voltar" action="buscarAluno.xhtml"/>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <h:commandButton class="btn btn-primary" value="salvar alterações" action="#{alunoController.salvar()}"/>
+                    </div>
+                </div>
             </h:form>
         </div>
     </ui:define>

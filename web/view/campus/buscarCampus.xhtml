@@ -14,12 +14,12 @@
                 <table data-page-length='5' class="table table-bordered table-striped"  onload="#{campusController.buscarTodosCampus()}">
                     <thead>
                         <tr>
-                            <th scope="col">#</th>
+                            <th scope="col">Id</th>
                             <th scope="col">Nome Campus</th>
                             <th scope="col">Estado</th>
                             <th scope="col">Cidade</th>
-                            <th scope="col">#</th>
-                            <th scope="col">#</th>
+                            <th scope="col">Alterar</th>
+                            <th scope="col">Excluir</th>
                         </tr>   
                     </thead>
                     <tbody> 
@@ -31,7 +31,7 @@
                                 <td>#{campus.cidade.cidadeNome}</td>
                                 <td>
                                     <h:form>
-                                        <h:commandButton class="btn btn-secondary" value="Alterar" onclick="return confirm('Deseja realmente alterar o registro?')" action= "#{campusController.editar(campus.idCampus)}"/>
+                                        <h:commandButton class="btn btn-warning" value="Alterar" onclick="return confirm('Deseja realmente alterar o registro?')" action= "#{campusController.editar(campus.idCampus)}"/>
                                     </h:form>
                                 </td>
                                 <td>

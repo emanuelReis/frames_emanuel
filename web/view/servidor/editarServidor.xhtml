@@ -51,7 +51,15 @@
                         <h:inputText class="form-control" id="cargo" value="#{servidorController.servidorModel.cargo}"/>
                     </div>
                 </div>
-                <h:commandButton class="btn btn-primary" value="salvar" action="#{servidorController.salvar()}"/>
+                
+                <div class="form-row">
+                    <div class="form-group col-md-1">
+                        <h:commandButton class="btn btn-secondary" value="voltar" action="buscarServidor.xhtml"/>
+                    </div>
+                    <div>
+                        <h:commandButton class="btn btn-primary" value="salvar alterações" action="#{servidorController.salvar()}"/>
+                    </div>
+                </div>
             </h:form>
         </div>
     </ui:define>

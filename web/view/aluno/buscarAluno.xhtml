@@ -28,12 +28,12 @@
                                 <!-- <td><h:outputText value="#{aluno.dataIngresso}"> <f:convertDateTime pattern="dd/MM/yyyy"/> </h:outputText></td>!-->
                                 <td>
                                     <h:form>
-                                        <h:commandButton class="btn btnsecondary" value="Alterar" onclick="return confirm('Deseja realmente alterar o registro?')" action= "#{alunoController.editar(aluno.idPessoa)}"/>
+                                        <h:commandButton class="btn btn-warning" value="Alterar" onclick="return confirm('Deseja realmente alterar o registro?')" action= "#{alunoController.editar(aluno.idPessoa)}"/>
                                     </h:form>
                                 </td>
                                 <td>
                                     <h:form>
-                                        <h:commandButton class="btn btndanger" value="Excluir" onclick="return confirm('Deseja realmente excluir o registro?')" action= "#{alunoController.remover(aluno.idPessoa)}"/>
+                                        <h:commandButton class="btn btn-danger" value="Excluir" onclick="return confirm('Deseja realmente excluir o registro?')" action= "#{alunoController.remover(aluno.idPessoa)}"/>
                                     </h:form>
                                 </td>
                             </tr>
