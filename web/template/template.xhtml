@@ -18,7 +18,7 @@
                 <h5 class="my-0 mr-md-auto font-weight-normal">
                     <h:graphicImage library="imagens" width="10%" height="10%" name="marcaifms.png" alt="
                                     logotipo do IFMS" />
-                    <a href="" target="blank" type="button" class="btn btn-link">
+                    <a href="https://www.ifms.edu.br/campi/campus-corumba" target="blank" type="button" class="btn btn-link">
                         IFMS/Corumbá - Tecnologia em Análise e Desenvolvimento de Sistemas
                     </a>
                 </h5>
@@ -27,20 +27,30 @@
                         <h:link class="nav-link active" value="Principal" outcome="/index.xhtml" />
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Campus</a>
-                        
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="nav-link dropdown-toggle" id="dropdownCampus" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Campus</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownCampus">
                             <h:link class="dropdownitem" value="Cadastrar Campus" outcome="/view/campus/inserirCampus.xhtml" />
                             <br><h:link class="dropdownitem" value="Buscar Campus" outcome="/view/campus/buscarCampus.xhtml" /></br>
                             <div class="dropdown-divider"></div>
-                            <h:link class="dropdownitem" value="Inserir Servidor" outcome="/view/servidor/inserirServidor.xhtml" />
+                        </div>
+                    </li>
+                    <li>
+                    <a class="nav-link dropdown-toggle" id="dropdownServidor" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servidor</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownServidor">    
+                            <h:link class="dropdownitem" value="Cadastrar Servidor" outcome="/view/servidor/inserirServidor.xhtml" />
                             <br><h:link class="dropdownitem" value="Buscar Servidor" outcome="/view/servidor/buscarServidor.xhtml" /></br>
                             <div class="dropdown-divider"></div>
-                            <h:link class="dropdownitem" value="Inserir Aluno" outcome="/view/aluno/inserirAluno.xhtml" />
+                    </div>
+                    </li>
+                    
+                    <li>
+                        <a class="nav-link dropdown-toggle" id="dropdownAluno" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Aluno</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownAluno">
+                            <h:link class="dropdownitem" value="Cadastrar Aluno" outcome="/view/aluno/inserirAluno.xhtml" />
                             <br><h:link class="dropdownitem" value="Buscar Aluno" outcome="/view/aluno/buscarAluno.xhtml" /></br>
                         </div>
-                        <!--</div>-->
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link disabled" id="nomeUsuario" href="#"></a>
                     </li>
